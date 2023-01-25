@@ -21,10 +21,8 @@ function App() {
       })
   }, [])
 
-
   const [lists, setLists] = useState([])
   const [value, setValue] = useState("")
-
 
   const changeHandler = (event) => {
     setValue(event.currentTarget.value)
@@ -45,7 +43,6 @@ function App() {
       })
   }
 
-
   return (
     <div className="App">
       <header className="App-header">
@@ -56,7 +53,7 @@ function App() {
             <li key={index}>{list.value} </li>
           ))}
           <br />
-            안녕하세요.
+          안녕하세요.
           <form className="example" onSubmit={submitHandler}>
             <input
               type="text"
